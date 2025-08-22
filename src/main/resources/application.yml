@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: internet-banking-app
+
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/banking
+
+  autoconfigure:
+    exclude: 
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+  sendgrid:
+    api-key: 
+
+server:
+  port: 8080
